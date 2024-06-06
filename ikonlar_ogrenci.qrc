@@ -1,0 +1,112 @@
+<RCC>
+  <qresource prefix="derskayit">
+    <file>derskayit2.ico</file>
+  </qresource>
+  <qresource prefix="onayla">
+    <file>onayla.ico</file>
+  </qresource>
+  <qresource prefix="gerigel">
+    <file>geri dön.ico</file>
+  </qresource>
+  <qresource prefix="sinavtarihi">
+    <file>Sinav Tarihi.png</file>
+  </qresource>
+  <qresource prefix="akdmkTakvim">
+    <file>Sınav Tarihleri.png</file>
+  </qresource>
+  <qresource prefix="akademiktakvim">
+    <file>2023-2024akademik-takvim.png</file>
+  </qresource>
+  <qresource prefix="asagiok">
+    <file>asagiok.png</file>
+  </qresource>
+  <qresource prefix="devamsızlıkdurumu">
+    <file>devamsızlık durumu.ico</file>
+  </qresource>
+  <qresource prefix="notgirişi">
+    <file>notgirisi.ico</file>
+  </qresource>
+  <qresource prefix="devamsızlık">
+    <file>devamsızlık.ico</file>
+  </qresource>
+  <qresource prefix="dersler">
+    <file>dersler2.ico</file>
+    <file>dersler.ico</file>
+  </qresource>
+  <qresource prefix="numara">
+    <file>numara.ico</file>
+  </qresource>
+  <qresource prefix="konum">
+    <file>konum.ico</file>
+  </qresource>
+  <qresource prefix="posta">
+    <file>posta.ico</file>
+  </qresource>
+  <qresource prefix="şifredeğiştir">
+    <file>şifredeğiş.ico</file>
+  </qresource>
+  <qresource prefix="user">
+    <file>user2.ico</file>
+    <file>user.ico</file>
+  </qresource>
+  <qresource prefix="humanico">
+    <file>human_icon-icons.com_67860.ico</file>
+  </qresource>
+  <qresource prefix="unknown">
+    <file>Unknown_person.jpg</file>
+  </qresource>
+  <qresource prefix="human">
+    <file>human.png</file>
+  </qresource>
+  <qresource prefix="labelarkaplan">
+    <file>arkaplan.jpg</file>
+  </qresource>
+  <qresource prefix="secildi">
+    <file>secildi.ico</file>
+  </qresource>
+  <qresource prefix="arti">
+    <file>arti.ico</file>
+  </qresource>
+  <qresource prefix="cikisyap">
+    <file>cikisyap.ico</file>
+  </qresource>
+  <qresource prefix="gerigel">
+    <file>geridonus.ico</file>
+  </qresource>
+  <qresource prefix="duyuru">
+    <file>duyuru (2).ico</file>
+  </qresource>
+  <qresource prefix="anaarkaplan">
+    <file>full_arka_plan.jpg</file>
+  </qresource>
+  <qresource prefix="arkaplan">
+    <file>ic_arkaplan.jpg</file>
+  </qresource>
+  <qresource prefix="aktifakademik">
+    <file>aktifakademik.ico</file>
+  </qresource>
+  <qresource prefix="ogrenimbilgileri">
+    <file>ogrenim.ico</file>
+  </qresource>
+  <qresource prefix="kayittarihi">
+    <file>kayittarihi3.ico</file>
+  </qresource>
+  <qresource prefix="amasyaunipng">
+    <file>amasyauni.png</file>
+  </qresource>
+  <qresource prefix="amasyauniico">
+    <file>amasyauni.ico</file>
+  </qresource>
+  <qresource prefix="notlistesi">
+    <file>notlistesi3.ico</file>
+  </qresource>
+  <qresource prefix="akademiktakvim">
+    <file>akademiktakvim2.ico</file>
+  </qresource>
+  <qresource prefix="sikayetkutusu">
+    <file>sikayetkutusu2.ico</file>
+  </qresource>
+  <qresource prefix="sifredegistir">
+    <file>sifredegistir2.ico</file>
+  </qresource>
+</RCC>

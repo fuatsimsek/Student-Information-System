@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_main</class>
+ <widget class="QWidget" name="Form_main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>Rockwell</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>OBS</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ikonlar_ogrenci.qrc">
+    <normaloff>:/amasyauniico/amasyauni.ico</normaloff>:/amasyauniico/amasyauni.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#form_main
+{background-image: url(:/ana_arkaplan/full_arka_plan.jpg);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget_giris" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1600</width>
+     <height>1000</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#widget_giris {
+    border: 2px solid #ccc; /* Kenarlık rengini ve kalınlığını ayarla */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    padding: 10px; /* İçeriği kenarlardan ayır */
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+}
+</string>
+   </property>
+   <widget class="QWidget" name="widget_ic" native="true">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>350</y>
+      <width>741</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_ic {
+    background-color: #22222; /* Arka plan rengini koyu gri olarak ayarla */
+    border: 2px solid #555555; /* Kenarlık rengini ve kalınlığını ayarla */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    padding: 10px; /* İçeriği kenarlardan ayır */
+    color: #cccccc; /* Yazı rengini ayarla */
+}
+</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>621</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+              <pointsize>26</pointsize>
+              <weight>10</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 87 26pt &quot;Arial Black&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Hoş Geldiniz</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_email_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    border: 2px solid #5e72e4; /* Kenarlık rengini değiştirin */
+    border-radius: 15px;  /* Daha yuvarlak kenarlar için değeri artırın */
+    padding: 10px; /* Metin içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 20px; /* Metin fontunun boyutunu biraz daha büyütün */
+    color: #333; /* Metin rengini belirler */
+    background-color: #f8f9fe; /* Arka plan rengini belirler */
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_sifre_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    border: 2px solid #5e72e4; /* Kenarlık rengini değiştirin */
+    border-radius: 15px;  /* Daha yuvarlak kenarlar için değeri artırın */
+    padding: 10px; /* Metin içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 20px; /* Metin fontunun boyutunu biraz daha büyütün */
+    color: #333; /* Metin rengini belirler */
+    background-color: #f8f9fe; /* Arka plan rengini belirler */
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QRadioButton" name="radioButton_ogrenci_4">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>12</pointsize>
+                <weight>10</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+color: rgb(225, 225, 225);</string>
+              </property>
+              <property name="text">
+               <string>Öğrenci</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radioButton_akademisyen_4">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>12</pointsize>
+                <weight>10</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+color: rgb(225, 225, 225);</string>
+              </property>
+              <property name="text">
+               <string>Akademisyen</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radioButton_ogrenciisleri_4">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>12</pointsize>
+                <weight>10</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+color: rgb(225, 225, 225);</string>
+              </property>
+              <property name="text">
+               <string>Öğrenci İşleri</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_giris_2">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_giris_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial Black</family>
+          <pointsize>15</pointsize>
+          <weight>10</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(85, 85, 255);
+	color: rgb(241, 241, 241);
+    border: 1px solid #a9a9a9;
+    border-radius: 15px;
+	font: 87 15pt &quot;Arial Black&quot;;
+}
+
+QPushButton:hover {
+    background-color: #88b8d6; /* Biraz daha koyu mavi tonu */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Giriş yap</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>50</y>
+      <width>191</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/amasyaunipng/amasyauni.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>150</y>
+      <width>981</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>30</pointsize>
+      <weight>10</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 87 30pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Amasya Üniversitesi Bilgi Sistemi</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ikonlar_ogrenci.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>clear()</slot>
+ </slots>
+</ui>

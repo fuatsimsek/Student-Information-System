@@ -1,0 +1,18 @@
+SQL Server Kurulumu:
+
+İlk olarak SQL Server'i indirip kurmanız gerekecek. Microsoft'un resmi web sitesinden SQL Server'in en son sürümünü indirebilirsiniz.
+Kurulum sihirbazını takip ederek SQL Server'ı bilgisayarınıza kurun. Kurulum sırasında isteğe bağlı olarak SQL Server Management Studio (SSMS) de kurabilirsiniz.
+SQL Server Management Studio (SSMS) Kurulumu:
+
+SQL Server kurulumu sırasında SSMS kurmadıysanız, ayrıca SSMS'yi indirip kurmanız gerekecek. Yine Microsoft'un web sitesinden SSMS'yi indirebilirsiniz.
+Veritabanı Yedek Dosyasını Yükleme:
+
+Projenizdeki ".bak" uzantılı OgrenciBilgiSistemi.bak veritabanı yedek dosyasını SQL Server Management Studio kullanarak veritabanınıza geri yükleyin.
+SSMS'yi açın, ardından "Databases" sekmesine sağ tıklayın ve "Restore Database" seçeneğini seçin. Bu adımda ".bak" dosyasını seçip geri yükleme işlemini tamamlayın.
+Bağlantı Bilgilerini Ayarlama:
+
+Projenizin içindeki "baglanti_sql.py" dosyasını açın ve içindeki server adını projenizin gereksinimlerine uygun olarak değiştirin.
+Daha sonra proje dosyalarınızı çalıştırın. Bağlantı bilgileriniz doğruysa, projeniz başlayacaktır.
+
+
+Config.json adlı dosyanın içerisine bir hotmail e postası ile şifresi giriniz.(Projede kayıtlı öğrencilere e-posta var.Projeyi çalıştırabilmeniz için gereklidir.) 

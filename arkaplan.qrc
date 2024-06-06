@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="ana_arkaplan">
+    <file>full_arka_plan.jpg</file>
+  </qresource>
+  <qresource prefix="ikon">
+    <file>obs.ico</file>
+  </qresource>
+  <qresource prefix="ic_arkaplan">
+    <file>ic_arkaplan.jpg</file>
+  </qresource>
+</RCC>

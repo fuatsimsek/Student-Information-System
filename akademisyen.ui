@@ -1,0 +1,2049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_akademisyen</class>
+ <widget class="QWidget" name="Form_akademisyen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1594</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Akademisyen</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ikonlar_ogrenci.qrc">
+    <normaloff>:/amasyauniico/amasyauni.ico</normaloff>:/amasyauniico/amasyauni.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: rgb(207, 207, 207);</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_anamenu">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>1241</width>
+     <height>1000</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1231</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_verilendersler">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(0, 206, 209);
+    border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222222; /* Daha koyu gri tonu */
+    text-align: top; /* Metni üste hizala */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Aktif Dönemde Verilen Dersler</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ikonlar_ogrenci.qrc">
+         <normaloff>:/dersler/dersler2.ico</normaloff>:/dersler/dersler2.ico</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_dersgorenogrenc">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(0, 206, 209);
+    border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222222; /* Daha koyu gri tonu */
+    text-align: top; /* Metni üste hizala */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Aktif Dönemde Ders Gören Öğrenciler</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ikonlar_ogrenci.qrc">
+         <normaloff>:/user/user2.ico</normaloff>:/user/user2.ico</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ogrtemail">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>420</y>
+      <width>441</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>e-mail</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ikonlar_ogrenci.qrc">
+      <normaloff>:/posta/posta.ico</normaloff>:/posta/posta.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ogrtakademisyennumara">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>350</y>
+      <width>441</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Akademisyen Numarası:</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ikonlar_ogrenci.qrc">
+      <normaloff>:/numara/numara.ico</normaloff>:/numara/numara.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_profil">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>250</y>
+      <width>1191</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #666; /* Yazı rengini değiştirerek açık gri tonuna ayarlar */
+	background-color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string> Profil</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ogrtfakulte">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>490</y>
+      <width>441</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Mühendislik Fakültesi</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ikonlar_ogrenci.qrc">
+      <normaloff>:/konum/konum.ico</normaloff>:/konum/konum.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ogrtisimsoyisim">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>280</y>
+      <width>441</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>İsim Soyisim</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ikonlar_ogrenci.qrc">
+      <normaloff>:/user/user.ico</normaloff>:/user/user.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ogrtphoto">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>300</y>
+      <width>151</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	background-color: rgb(172, 172, 172);
+	image: url(:/unknown/Unknown_person.jpg);
+    border-radius: 10px; /* Köşeleri daha yuvarlak yapar */
+    border: 2px solid #a9a9a9; /* Kenarlık rengi ve kalınlığını belirler */
+    padding: 10px; /* Yazı içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 15px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #333; /* Yazı rengini belirler */
+    background-color: rgba(255, 255, 255, 0); /* Arka plan rengini şeffaf yapar */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_profilsar_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>21</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 215, 0);
+border-image: url(:/arkaplan/ic_arkaplan.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_profil</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>pushButton_ogrtemail</zorder>
+   <zorder>pushButton_ogrtakademisyennumara</zorder>
+   <zorder>pushButton_ogrtfakulte</zorder>
+   <zorder>pushButton_ogrtisimsoyisim</zorder>
+   <zorder>label_ogrtphoto</zorder>
+   <zorder>label_profilsar_3</zorder>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_solmenu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>270</y>
+     <width>331</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QListWidget" name="listWidget_menu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>341</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget {
+    background-color: rgb(0, 206, 209);
+    border-image: url(:/arkaplan/ic_arkaplan.jpg);
+}
+
+QListWidget::item:hover {
+    background-color: #add8e6; /* Açık mavi tonu */
+}
+
+QListWidget::item:selected {
+    background-color: #6a5acd; /* Orta mor renk */
+    color: white; /* Seçili öğenin metin rengi */
+}
+</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+    <item>
+     <property name="text">
+      <string>Ana Menü</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="icon">
+      <iconset resource="ikonlar_ogrenci.qrc">
+       <normaloff>:/gerigel/geridonus.ico</normaloff>:/gerigel/geridonus.ico</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Not Girişi</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="icon">
+      <iconset resource="ikonlar_ogrenci.qrc">
+       <normaloff>:/notgirişi/notgirisi.ico</normaloff>:/notgirişi/notgirisi.ico</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Devamsızlık Girişi</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="icon">
+      <iconset resource="ikonlar_ogrenci.qrc">
+       <normaloff>:/devamsızlık/devamsızlık.ico</normaloff>:/devamsızlık/devamsızlık.ico</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Şifre Değiştir</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="icon">
+      <iconset resource="ikonlar_ogrenci.qrc">
+       <normaloff>:/sifredegistir/sifredegistir2.ico</normaloff>:/sifredegistir/sifredegistir2.ico</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Duyuru Yap</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="icon">
+      <iconset resource="ikonlar_ogrenci.qrc">
+       <normaloff>:/sikayetkutusu/sikayetkutusu2.ico</normaloff>:/sikayetkutusu/sikayetkutusu2.ico</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Çıkış Yap</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="icon">
+      <iconset resource="ikonlar_ogrenci.qrc">
+       <normaloff>:/cikisyap/cikisyap.ico</normaloff>:/cikisyap/cikisyap.ico</iconset>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 206, 209);
+border-image: url(:/arkaplan/ic_arkaplan.jpg);</string>
+    </property>
+    <property name="text">
+     <string>Akademisyen Bilgi Sistemi</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_amasyalogo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>331</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/amasyaunipng/amasyauni.png);
+border-image: url(:/arkaplan/ic_arkaplan.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_amasyauni">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>200</y>
+     <width>331</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/arkaplan/ic_arkaplan.jpg);</string>
+   </property>
+   <property name="text">
+    <string>AMASYA ÜNİVERSİTESİ</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_notgirisi">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>1241</width>
+     <height>1000</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_notgirisi">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1241</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222; /* Yazı rengi */
+    background-color: #f5f5f5; /* Yumuşak bir gri tonu */
+    border: 2px solid #bbb; /* Kenarlık */
+    border-radius: 0px; /* Kenar yuvarlaklığı kaldırıldı */
+    padding: 10px; /* İç boşluk */
+}
+
+QLabel:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Not Girişi</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_notgir">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>110</y>
+      <width>951</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    border: 2px solid #ccc; /* Tablo kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item {
+    padding: 5px; /* Hücre içeriğinin etrafındaki boşluk */
+    background-color: #f0f0f0; /* Hücre arka plan rengi */
+    border: none; /* Hücre kenarlık stilini kaldırma */
+}
+
+QHeaderView::section {
+    padding: 3px; /* Sütun başlığı içeriğinin etrafındaki boşluk */
+    text-align: center; /* Sütun başlığı metni ortala */
+    background-color: #f0f0f0; /* Sütun başlığı arka plan rengi */
+    border: 2px solid #ccc; /* Sütun başlığı kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item:selected {
+    background-color: lightblue; /* Seçili hücre arka plan rengi */
+}
+
+
+</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>210</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>60</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>60</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>50</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>Bilgiler</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Öğrenci No</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Ders Kodu</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Vize Notu</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Final Notu</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_blok_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>100</y>
+      <width>114</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_notsonuclandir">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>170</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 2px solid #a9a9a9;
+    border-radius: 12px;
+    background-color: #add8e6; /* Açık mavi tonu */
+}
+
+QPushButton:hover {
+    background-color: #88b8d6; /* Biraz daha koyu mavi tonu */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Sonuçlandır</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_bilgilendirme">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>580</y>
+      <width>1241</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    border-radius: 15px; /* Köşeleri daha bombeli yapar */
+    border: 2px solid #ccc; /* Kenarlık çizgisi ekler */
+    padding: 10px; /* Yazı içeriğinin kenarlardan içeriye uzaklığı */
+    font-size: 18px; /* Yazı fontunun boyutu */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengi */
+    background-color: #f0f0f0; /* Arka plan rengini gri tonlarına ayarlar */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Eğer vize ve final notları girilmiş ancak sonuçlandırma yapılmamışsa,kullanıcı şu mesajı görecek:
+&quot;Sonuçlandırılmadı.&quot;Ortalama ve durum bilgilerinin görünebilmesi içinde Sonuçlandır butonuna basılması gerekir.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_blok_profilbilgileri">
+    <property name="geometry">
+     <rect>
+      <x>53</x>
+      <y>350</y>
+      <width>24</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_notgir_profilbilgileri">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>350</y>
+      <width>441</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    border: 2px solid #ccc; /* Tablo kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item {
+    padding: 5px; /* Hücre içeriğinin etrafındaki boşluk */
+    background-color: #f0f0f0; /* Hücre arka plan rengi */
+    border: none; /* Hücre kenarlık stilini kaldırma */
+}
+
+QHeaderView::section {
+    padding: 3px; /* Sütun başlığı içeriğinin etrafındaki boşluk */
+    text-align: center; /* Sütun başlığı metni ortala */
+    background-color: #f0f0f0; /* Sütun başlığı arka plan rengi */
+    border: 2px solid #ccc; /* Sütun başlığı kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item:selected {
+    background-color: lightblue; /* Seçili hücre arka plan rengi */
+}
+
+
+</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>210</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>100</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>70</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>50</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Öğrenci No</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Adı Soyadı</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_engelnotgirisi">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>320</y>
+      <width>521</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222; /* Yazı rengi */
+    background-color: #f5f5f5; /* Yumuşak bir gri tonu */
+    border: 2px solid #bbb; /* Kenarlık */
+    border-radius: 0px; /* Kenar yuvarlaklığı kaldırıldı */
+    padding: 10px; /* İç boşluk */
+}
+
+QLabel:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_engelnotgirisi2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>320</y>
+      <width>541</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222; /* Yazı rengi */
+    background-color: #f5f5f5; /* Yumuşak bir gri tonu */
+    border: 2px solid #bbb; /* Kenarlık */
+    border-radius: 0px; /* Kenar yuvarlaklığı kaldırıldı */
+    padding: 10px; /* İç boşluk */
+}
+
+QLabel:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_engelnotgirisi3">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>309</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-size: 24px; /* Yazı boyutu */
+    color: #222; /* Koyu renkli yazı rengi */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Öğrenci Profili</string>
+    </property>
+   </widget>
+   <zorder>tableWidget_notgir_profilbilgileri</zorder>
+   <zorder>label_notgirisi</zorder>
+   <zorder>tableWidget_notgir</zorder>
+   <zorder>label_blok_2</zorder>
+   <zorder>pushButton_notsonuclandir</zorder>
+   <zorder>label_bilgilendirme</zorder>
+   <zorder>label_blok_profilbilgileri</zorder>
+   <zorder>label_engelnotgirisi</zorder>
+   <zorder>label_engelnotgirisi2</zorder>
+   <zorder>label_engelnotgirisi3</zorder>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_devamsizlik">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>1241</width>
+     <height>1000</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_devamsizlikgirisimenucubugu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1241</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222; /* Yazı rengi */
+    background-color: #f5f5f5; /* Yumuşak bir gri tonu */
+    border: 2px solid #bbb; /* Kenarlık */
+    border-radius: 0px; /* Kenar yuvarlaklığı kaldırıldı */
+    padding: 10px; /* İç boşluk */
+}
+
+QLabel:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Devamsızlık Girişi</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_devamsizlikonayla">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>190</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 2px solid #a9a9a9;
+    border-radius: 12px;
+    background-color: #add8e6; /* Açık mavi tonu */
+}
+
+QPushButton:hover {
+    background-color: #88b8d6; /* Biraz daha koyu mavi tonu */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Onayla</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_blok">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>110</y>
+      <width>133</width>
+      <height>69</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_devamsizlik">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>110</y>
+      <width>761</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>4</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    border: 5px solid #ccc; /* Tablo kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item {
+    padding: 5px; /* Hücre içeriğinin etrafındaki boşluk */
+    background-color: #f0f0f0; /* Hücre arka plan rengi */
+    border: none; /* Hücre kenarlık stilini kaldırma */
+}
+
+QHeaderView::section {
+    padding: 11px; /* Sütun başlığı içeriğinin etrafındaki boşluk */
+    text-align: center; /* Sütun başlığı metni ortala */
+    background-color: #f0f0f0; /* Sütun başlığı arka plan rengi */
+    border: 2px solid #ccc; /* Sütun başlığı kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item:selected {
+    background-color: lightblue; /* Seçili hücre arka plan rengi */
+}
+
+
+</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>210</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>60</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>60</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>50</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>Bilgiler</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Öğrenci No</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Ders Kodu</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tarih</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_bilgilendirmedevamsizlik">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>580</y>
+      <width>1241</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    border-radius: 15px; /* Köşeleri daha bombeli yapar */
+    border: 2px solid #ccc; /* Kenarlık çizgisi ekler */
+    padding: 10px; /* Yazı içeriğinin kenarlardan içeriye uzaklığı */
+    font-size: 18px; /* Yazı fontunun boyutu */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengi */
+    background-color: #f0f0f0; /* Arka plan rengini gri tonlarına ayarlar */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Her bir devamsızlık tarihi girildiğinde, öğrencinin toplam devamsızlık sayısı bir bir artacak.
+Öğrenci, &quot;Öğrenci Devamsızlık Durumu&quot; menüsünden toplam devamsızlık sayısını görebilecek.</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_devamsizlikgirprofil">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>350</y>
+      <width>441</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    border: 2px solid #ccc; /* Tablo kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item {
+    padding: 5px; /* Hücre içeriğinin etrafındaki boşluk */
+    background-color: #f0f0f0; /* Hücre arka plan rengi */
+    border: none; /* Hücre kenarlık stilini kaldırma */
+}
+
+QHeaderView::section {
+    padding: 3px; /* Sütun başlığı içeriğinin etrafındaki boşluk */
+    text-align: center; /* Sütun başlığı metni ortala */
+    background-color: #f0f0f0; /* Sütun başlığı arka plan rengi */
+    border: 2px solid #ccc; /* Sütun başlığı kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item:selected {
+    background-color: lightblue; /* Seçili hücre arka plan rengi */
+}
+
+
+</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>210</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>100</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>70</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>50</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Öğrenci No</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Adı Soyadı</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_blok_devamsizlikprofil">
+    <property name="geometry">
+     <rect>
+      <x>53</x>
+      <y>350</y>
+      <width>24</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_engeldevamsizlilk">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>320</y>
+      <width>541</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222; /* Yazı rengi */
+    background-color: #f5f5f5; /* Yumuşak bir gri tonu */
+    border: 2px solid #bbb; /* Kenarlık */
+    border-radius: 0px; /* Kenar yuvarlaklığı kaldırıldı */
+    padding: 10px; /* İç boşluk */
+}
+
+QLabel:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_engeldevamsizlilk3">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>309</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-size: 24px; /* Yazı boyutu */
+    color: #222; /* Koyu renkli yazı rengi */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Öğrenci Profili</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_engeldevamsizlilk2">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>320</y>
+      <width>521</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222; /* Yazı rengi */
+    background-color: #f5f5f5; /* Yumuşak bir gri tonu */
+    border: 2px solid #bbb; /* Kenarlık */
+    border-radius: 0px; /* Kenar yuvarlaklığı kaldırıldı */
+    padding: 10px; /* İç boşluk */
+}
+
+QLabel:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>tableWidget_devamsizlik</zorder>
+   <zorder>label_devamsizlikgirisimenucubugu</zorder>
+   <zorder>pushButton_devamsizlikonayla</zorder>
+   <zorder>label_blok</zorder>
+   <zorder>label_bilgilendirmedevamsizlik</zorder>
+   <zorder>tableWidget_devamsizlikgirprofil</zorder>
+   <zorder>label_blok_devamsizlikprofil</zorder>
+   <zorder>label_engeldevamsizlilk</zorder>
+   <zorder>label_engeldevamsizlilk3</zorder>
+   <zorder>label_engeldevamsizlilk2</zorder>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_sifredegistir">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>1241</width>
+     <height>1000</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_sifredegismenucubugu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1241</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    background-color: #f0f0f0; /* Arka plan rengi */
+    color: #222; /* Koyu gri metin rengi */
+    padding: 20px; /* İç boşluk */
+    border: 1px solid #ccc; /* Kenarlık */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Gölge */
+    transition: background-color 0.3s, border-color 0.3s; /* Yumuşak geçiş */
+    text-align: center; /* Metni merkezle */
+}
+
+QLabel:hover {
+    background-color: #e0e0e0; /* Arka plan rengi (hover durumunda) */
+    border-color: #999; /* Kenarlık rengi (hover durumunda) */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Şifre Değiştir</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>200</y>
+      <width>741</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_2 {
+    border: 4px solid #555555; /* Kenarlık rengini ve kalınlığını ayarla */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    padding: 10px; /* İçeriği kenarlardan ayır */
+}
+</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>50</y>
+       <width>581</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="lineEdit_yenisifre1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    border: 2px solid #5e72e4; /* Kenarlık rengini değiştirin */
+    border-radius: 15px;  /* Daha yuvarlak kenarlar için değeri artırın */
+    padding: 10px; /* Metin içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 20px; /* Metin fontunun boyutunu biraz daha büyütün */
+    color: #333; /* Metin rengini belirler */
+    background-color: #f8f9fe; /* Arka plan rengini belirler */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_eskisifre">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    border: 2px solid #5e72e4; /* Kenarlık rengini değiştirin */
+    border-radius: 15px;  /* Daha yuvarlak kenarlar için değeri artırın */
+    padding: 10px; /* Metin içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 20px; /* Metin fontunun boyutunu biraz daha büyütün */
+    color: #333; /* Metin rengini belirler */
+    background-color: #f8f9fe; /* Arka plan rengini belirler */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Normal</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_yenisifre2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    border: 2px solid #5e72e4; /* Kenarlık rengini değiştirin */
+    border-radius: 15px;  /* Daha yuvarlak kenarlar için değeri artırın */
+    padding: 10px; /* Metin içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 20px; /* Metin fontunun boyutunu biraz daha büyütün */
+    color: #333; /* Metin rengini belirler */
+    background-color: #f8f9fe; /* Arka plan rengini belirler */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_girisekraninadon">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>275</y>
+       <width>591</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox {
+                spacing: 5px;
+                font-size: 20px;
+                color: #333;
+            }</string>
+     </property>
+     <property name="text">
+      <string>Tüm cihazlardan çıkış yapın</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_sifredegistir">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>315</y>
+       <width>591</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 2px solid #a9a9a9;
+    border-radius: 15px;
+    background-color: #add8e6; /* Açık mavi tonu */
+}
+
+QPushButton:hover {
+    background-color: #88b8d6; /* Biraz daha koyu mavi tonu */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Şifreyi Değiştir</string>
+     </property>
+     <property name="icon">
+      <iconset resource="ikonlar_ogrenci.qrc">
+       <normaloff>:/şifredeğiştir/şifredeğiş.ico</normaloff>:/şifredeğiştir/şifredeğiş.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_sifreguncellendi">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>385</y>
+       <width>591</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #008000; /* Yeşil renk */
+    font-size: 20px;
+    font-weight: bold;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_duyuruyap">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>1241</width>
+     <height>1000</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="pushButton_gonder">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>640</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 2px solid #a9a9a9;
+    border-radius: 15px;
+    background-color: #add8e6; /* Açık mavi tonu */
+}
+
+QPushButton:hover {
+    background-color: #88b8d6; /* Biraz daha koyu mavi tonu */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gönder</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ikonlar_ogrenci.qrc">
+      <normaloff>:/sikayetkutusu/sikayetkutusu2.ico</normaloff>:/sikayetkutusu/sikayetkutusu2.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_metin">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>260</y>
+      <width>1101</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit {
+    border: 2px solid #5e72e4; /* Kenarlık rengini değiştirin */
+    border-radius: 15px;  /* Daha yuvarlak kenarlar için değeri artırın */
+    padding: 10px; /* Metin içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 18px; /* Metin fontunun boyutunu biraz daha büyütün */
+    color: #333; /* Metin rengini belirler */
+    background-color: #f8f9fe; /* Arka plan rengini belirler */
+}
+QTextEdit QScrollBar {
+    width: 0px;                 /* Yatay ve dikey scroll bar genişliği */
+    height: 0px;                /* Yatay ve dikey scroll bar yüksekliği */
+    background: transparent;    /* Scroll bar arka plan rengi */
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_baslik">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>180</y>
+      <width>801</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 2px solid #5e72e4; /* Kenarlık rengini değiştirin */
+    border-radius: 15px;  /* Daha yuvarlak kenarlar için değeri artırın */
+    padding: 10px; /* Metin içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 22px; /* Metin fontunun boyutunu biraz daha büyütün */
+    color: #333; /* Metin rengini belirler */
+    background-color: #f8f9fe; /* Arka plan rengini belirler */
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_devamsizlikgirisimenucubugu_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1241</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222; /* Yazı rengi */
+    background-color: #f5f5f5; /* Yumuşak bir gri tonu */
+    border: 2px solid #bbb; /* Kenarlık */
+    border-radius: 0px; /* Kenar yuvarlaklığı kaldırıldı */
+    padding: 10px; /* İç boşluk */
+}
+
+QLabel:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Duyuru Yap</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_bilgi">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>630</y>
+      <width>551</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>pushButton_gonder</zorder>
+   <zorder>textEdit_metin</zorder>
+   <zorder>label_devamsizlikgirisimenucubugu_2</zorder>
+   <zorder>lineEdit_baslik</zorder>
+   <zorder>label_bilgi</zorder>
+  </widget>
+  <zorder>label_amasyalogo</zorder>
+  <zorder>label_amasyauni</zorder>
+  <zorder>groupBox_solmenu</zorder>
+  <zorder>groupBox_anamenu</zorder>
+  <zorder>groupBox_sifredegistir</zorder>
+  <zorder>groupBox_notgirisi</zorder>
+  <zorder>groupBox_devamsizlik</zorder>
+  <zorder>groupBox_duyuruyap</zorder>
+ </widget>
+ <resources>
+  <include location="ikonlar_ogrenci.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,4151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow_ogrenci</class>
+ <widget class="QMainWindow" name="MainWindow_ogrenci">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Öğrenci</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ikonlar_ogrenci.qrc">
+    <normaloff>:/amasyauniico/amasyauni.ico</normaloff>:/amasyauniico/amasyauni.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: rgb(207, 207, 207);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1600</width>
+      <height>1600</height>
+     </rect>
+    </property>
+    <widget class="QGroupBox" name="groupBox_NotListesi">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>0</y>
+       <width>1241</width>
+       <height>1000</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_notlistesi">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    background-color: #f0f0f0; /* Arka plan rengi */
+    color: #222;/* Metin rengi */
+    padding: 20px; /* İç boşluk */
+    border: 1px solid #ccc; /* Kenarlık */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Gölge */
+    transition: background-color 0.3s, border-color 0.3s; /* Yumuşak geçiş */
+    text-align: center; /* Metni merkezle */
+}
+
+QLabel:hover {
+    background-color: #e0e0e0; /* Arka plan rengi (hover durumunda) */
+    border-color: #999; /* Kenarlık rengi (hover durumunda) */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Lütfen ders kaydı yapmak için Ders Kayıt menüsünden, seçtiğiniz dersleri kesinleştirin.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_notlarim">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>1221</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    border: 2px solid #ccc; /* Tablo kenarlık rengi ve kalınlığı */
+    border-radius: 11px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item {
+    padding: 5px; /* Hücre içeriğinin etrafındaki boşluk */
+    background-color: #f0f0f0; /* Hücre arka plan rengi */
+    border: none; /* Hücre kenarlık stilini kaldırma */
+}
+
+QHeaderView::section {
+    padding: 7px; /* Sütun başlığı içeriğinin etrafındaki boşluk */
+    text-align: center; /* Sütun başlığı metni ortala */
+    background-color: #f0f0f0; /* Sütun başlığı arka plan rengi */
+    border: 2px solid #ccc; /* Sütun başlığı kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item:selected {
+    background-color: lightblue; /* Seçili hücre arka plan rengi */
+}
+
+
+
+</string>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>168</number>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>160</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>60</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>60</number>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Ders Kodu</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ders Adı</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>S.Durum</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Vize Notu</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Final Notu</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ortalama</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Durumu</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="4">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="5">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="6">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="3">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="4">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="5">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="6">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="2">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="3">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="4">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="5">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="6">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="3">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="4">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="5">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="6">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="3">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="4">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="5">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="6">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="3">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="4">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="5">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="6">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="3">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="4">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="5">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="6">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="2">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="3">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="4">
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="5">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="6">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_blok">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>41</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_bilgilendirme">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>640</y>
+        <width>1241</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    border-radius: 15px; /* Köşeleri daha bombeli yapar */
+    border: 2px solid #ccc; /* Kenarlık çizgisi ekler */
+    padding: 10px; /* Yazı içeriğinin kenarlardan içeriye uzaklığı */
+    font-size: 18px; /* Yazı fontunun boyutu */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengi */
+    background-color: #f0f0f0; /* Arka plan rengini gri tonlarına ayarlar */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Ders Sonuçlandırılmadı olarak görünmesi:
+1- Yarıyıl sonu sınavı notu henüz girilmedi.
+2- Tüm sınav notları girildi fakat harf notu henüz hesaplanmadı.
+3- Not girişi tamamlanmayan bütünleme sınavı mevcut.
+4- Bütünleme sınav notları girildi fakat henüz harf notu hesaplanmadı.
+
+Harf Notunun &quot;--&quot; olarak görünmesi:
+1) Harf notlarının ilan tarihi bekleniyor.
+2) Ders sonuçlandırılmamış/ilan edilmemiş olabilir.
+3) Derse ait bütünleme sınavı varsa, bütünleme ilan tarihi beklenir.</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_solmenu">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>270</y>
+       <width>331</width>
+       <height>751</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QListWidget" name="listWidget_menu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>341</width>
+        <height>661</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget {
+    background-color: rgb(0, 206, 209);
+    border-image: url(:/arkaplan/ic_arkaplan.jpg);
+}
+
+QListWidget::item:hover {
+    background-color: #add8e6; /* Açık mavi tonu */
+}
+
+QListWidget::item:selected {
+    background-color: #2980b9; /* Orta mor renk */
+    color: white; /* Seçili öğenin metin rengi */
+}
+</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>36</width>
+        <height>36</height>
+       </size>
+      </property>
+      <item>
+       <property name="text">
+        <string>Ana Menü</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset resource="ikonlar_ogrenci.qrc">
+         <normaloff>:/gerigel/geridonus.ico</normaloff>:/gerigel/geridonus.ico</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ders Kayıt</string>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset resource="ikonlar_ogrenci.qrc">
+         <normaloff>:/derskayit/derskayit2.ico</normaloff>:/derskayit/derskayit2.ico</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Not Listesi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset resource="ikonlar_ogrenci.qrc">
+         <normaloff>:/notlistesi/notlistesi3.ico</normaloff>:/notlistesi/notlistesi3.ico</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Devamsızlık Durumu</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset resource="ikonlar_ogrenci.qrc">
+         <normaloff>:/devamsızlıkdurumu/devamsızlık durumu.ico</normaloff>:/devamsızlıkdurumu/devamsızlık durumu.ico</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Akademik Takvim</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset resource="ikonlar_ogrenci.qrc">
+         <normaloff>:/akademiktakvim/akademiktakvim2.ico</normaloff>:/akademiktakvim/akademiktakvim2.ico</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Şifre Değiştir</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset resource="ikonlar_ogrenci.qrc">
+         <normaloff>:/sifredegistir/sifredegistir2.ico</normaloff>:/sifredegistir/sifredegistir2.ico</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Çıkış Yap</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset resource="ikonlar_ogrenci.qrc">
+         <normaloff>:/cikisyap/cikisyap.ico</normaloff>:/cikisyap/cikisyap.ico</iconset>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 206, 209);
+border-image: url(:/arkaplan/ic_arkaplan.jpg);</string>
+      </property>
+      <property name="text">
+       <string>Öğrenci Bilgi Sistemi</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_derskayit">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>0</y>
+       <width>1241</width>
+       <height>1000</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QTableWidget" name="tableWidget_kayit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>91</y>
+        <width>1031</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    border: 2px solid #ccc; /* Tablo kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item {
+    padding: 5px; /* Hücre içeriğinin etrafındaki boşluk */
+    background-color: #f0f0f0; /* Hücre arka plan rengi */
+    border: none; /* Hücre kenarlık stilini kaldırma */
+}
+
+QHeaderView::section {
+    padding: 7px; /* Sütun başlığı içeriğinin etrafındaki boşluk */
+    text-align: center; /* Sütun başlığı metni ortala */
+    background-color: #f0f0f0; /* Sütun başlığı arka plan rengi */
+    border: 2px solid #ccc; /* Sütun başlığı kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item:selected {
+    background-color: lightblue; /* Seçili hücre arka plan rengi */
+}
+
+
+</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>196</number>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>58</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>52</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>50</number>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Ders Kodu</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ders Adı</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Kredi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Sınıf</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Alış</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>a</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="4">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>b</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="4">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>c</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="4">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>d</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="4">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>e</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignLeading|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="4" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="4">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string>f</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignLeading|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="5" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="4">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string>g</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="4">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="0">
+       <property name="text">
+        <string>h</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="4">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>140</y>
+        <width>211</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_1">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 2px solid #555; /* Kenarlık kalınlığı ve rengi */
+    border-radius: 12px; /* Kenar yuvarlaklığı */
+    background-color: #f0f0f0; /* Arkaplan rengi */
+    color: #000000; /* Yazı rengi */
+    padding: 5px 10px; /* İç boşluk (dikey ve yatay) */
+}
+
+QPushButton:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+
+QPushButton:pressed {
+    background-color: #ccc; /* Basıldığında arka plan rengi */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>EKLE</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/arti/arti.ico</normaloff>:/arti/arti.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 2px solid #555; /* Kenarlık kalınlığı ve rengi */
+    border-radius: 12px; /* Kenar yuvarlaklığı */
+    background-color: #f0f0f0; /* Arkaplan rengi */
+    color: #000000; /* Yazı rengi */
+    padding: 5px 10px; /* İç boşluk (dikey ve yatay) */
+}
+
+QPushButton:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+
+QPushButton:pressed {
+    background-color: #ccc; /* Basıldığında arka plan rengi */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>EKLE</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/arti/arti.ico</normaloff>:/arti/arti.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 2px solid #555; /* Kenarlık kalınlığı ve rengi */
+    border-radius: 12px; /* Kenar yuvarlaklığı */
+    background-color: #f0f0f0; /* Arkaplan rengi */
+    color: #000000; /* Yazı rengi */
+    padding: 5px 10px; /* İç boşluk (dikey ve yatay) */
+}
+
+QPushButton:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+
+QPushButton:pressed {
+    background-color: #ccc; /* Basıldığında arka plan rengi */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>EKLE</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/arti/arti.ico</normaloff>:/arti/arti.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 2px solid #555; /* Kenarlık kalınlığı ve rengi */
+    border-radius: 12px; /* Kenar yuvarlaklığı */
+    background-color: #f0f0f0; /* Arkaplan rengi */
+    color: #000000; /* Yazı rengi */
+    padding: 5px 10px; /* İç boşluk (dikey ve yatay) */
+}
+
+QPushButton:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+
+QPushButton:pressed {
+    background-color: #ccc; /* Basıldığında arka plan rengi */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>EKLE</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/arti/arti.ico</normaloff>:/arti/arti.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 2px solid #555; /* Kenarlık kalınlığı ve rengi */
+    border-radius: 12px; /* Kenar yuvarlaklığı */
+    background-color: #f0f0f0; /* Arkaplan rengi */
+    color: #000000; /* Yazı rengi */
+    padding: 5px 10px; /* İç boşluk (dikey ve yatay) */
+}
+
+QPushButton:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+
+QPushButton:pressed {
+    background-color: #ccc; /* Basıldığında arka plan rengi */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>EKLE</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/arti/arti.ico</normaloff>:/arti/arti.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 2px solid #555; /* Kenarlık kalınlığı ve rengi */
+    border-radius: 12px; /* Kenar yuvarlaklığı */
+    background-color: #f0f0f0; /* Arkaplan rengi */
+    color: #000000; /* Yazı rengi */
+    padding: 5px 10px; /* İç boşluk (dikey ve yatay) */
+}
+
+QPushButton:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+
+QPushButton:pressed {
+    background-color: #ccc; /* Basıldığında arka plan rengi */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>EKLE</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/arti/arti.ico</normaloff>:/arti/arti.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 2px solid #555; /* Kenarlık kalınlığı ve rengi */
+    border-radius: 12px; /* Kenar yuvarlaklığı */
+    background-color: #f0f0f0; /* Arkaplan rengi */
+    color: #000000; /* Yazı rengi */
+    padding: 5px 10px; /* İç boşluk (dikey ve yatay) */
+}
+
+QPushButton:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+
+QPushButton:pressed {
+    background-color: #ccc; /* Basıldığında arka plan rengi */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>EKLE</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/arti/arti.ico</normaloff>:/arti/arti.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 2px solid #555; /* Kenarlık kalınlığı ve rengi */
+    border-radius: 12px; /* Kenar yuvarlaklığı */
+    background-color: #f0f0f0; /* Arkaplan rengi */
+    color: #000000; /* Yazı rengi */
+    padding: 5px 10px; /* İç boşluk (dikey ve yatay) */
+}
+
+QPushButton:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+
+QPushButton:pressed {
+    background-color: #ccc; /* Basıldığında arka plan rengi */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>EKLE</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/arti/arti.ico</normaloff>:/arti/arti.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_kesinlestir">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>580</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 2px solid #a9a9a9;
+    border-radius: 15px;
+    background-color: #add8e6; /* Açık mavi tonu */
+}
+
+QPushButton:hover {
+    background-color: #88b8d6; /* Biraz daha koyu mavi tonu */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Kesinleştir</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ogrencikesinlestirme">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>604</y>
+        <width>571</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    font-size: 21px; /* Yazı boyutu */
+    color: #222; /* Koyu renkli yazı rengi */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Öğrenci Kesinleştirme Durumu :- 	</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222; /* Yazı rengi */
+    background-color: #f5f5f5; /* Yumuşak bir gri tonu */
+    border: 2px solid #bbb; /* Kenarlık */
+    border-radius: 0px; /* Kenar yuvarlaklığı kaldırıldı */
+    padding: 10px; /* İç boşluk */
+}
+
+QLabel:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Seçilmesi Gereken Dersler</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_kesinlesendersler">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>750</y>
+        <width>1211</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    background-color: #f0f0f0; /* Tablo arka plan rengi */
+    alternate-background-color: #e0e0e0; /* Sıra arka plan rengi */
+    selection-background-color: #c0c0c0; /* Seçilen hücre arka plan rengi */
+    selection-color: #ffffff; /* Seçilen hücre metin rengi */
+    border: 2px solid #ccc; /* Tablo kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item {
+    padding: 5px; /* Hücre içeriğinin etrafındaki boşluk */
+    background-color: #f0f0f0; /* Hücre arka plan rengi */
+    border: none; /* Hücre kenarlık stilini kaldırma */
+}
+
+QHeaderView::section {
+    background-color: #f0f0f0; /* Başlık arka plan rengi */
+    color: #000000; /* Başlık metin rengi */
+    padding: 5px; /* Başlık iç boşluğu */
+    border: 2px solid #ccc; /* Başlık kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+    text-align: center; /* Sütun başlığı metni ortala */
+}
+
+QTableWidget::item:selected {
+    background-color: #c0c0c0; /* Seçilen hücre arka plan rengi */
+    color: #ffffff; /* Seçilen hücre metin rengi */
+}
+
+QTableWidget QHeaderView {
+    width: 100px; /* Sütun genişliği */
+}
+QTableCornerButton {
+    background-color: #f0f0f0; /* Sol üst köşe kutusu arka plan rengi */
+    border: none; /* Sol üst köşe kutusu kenarlık stilini kaldırma */
+}
+QTableCornerButton::section {
+    background-color: transparent; /* Sol üst köşe kutusu arka plan rengi */
+    border: none; /* Sol üst köşe kutusu kenarlık stilini kaldırma */
+}
+</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>125</number>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>80</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>65</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>65</number>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>Ders Kodu</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="4">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="5">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="6">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="7">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>745</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>41</width>
+        <height>56</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ogrencikesinlestirme_2">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>700</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    font-size: 24px; /* Yazı boyutu */
+    color: #222; /* Koyu renkli yazı rengi */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Seçilen Dersler</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>711</y>
+        <width>541</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222; /* Yazı rengi */
+    background-color: #f5f5f5; /* Yumuşak bir gri tonu */
+    border: 2px solid #bbb; /* Kenarlık */
+    border-radius: 0px; /* Kenar yuvarlaklığı kaldırıldı */
+    padding: 10px; /* İç boşluk */
+}
+
+QLabel:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>711</y>
+        <width>521</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    color: #222; /* Yazı rengi */
+    background-color: #f5f5f5; /* Yumuşak bir gri tonu */
+    border: 2px solid #bbb; /* Kenarlık */
+    border-radius: 0px; /* Kenar yuvarlaklığı kaldırıldı */
+    padding: 10px; /* İç boşluk */
+}
+
+QLabel:hover {
+    background-color: #ddd; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>1143</x>
+        <y>750</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_logo">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>331</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">groupBox.setStyleSheet(&quot;background-image: url(:/arkaplan/ic_arkaplan.jpg);&quot;)</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+     </property>
+     <widget class="QLabel" name="label_amasyalogo">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>331</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/amasyaunipng/amasyauni.png);
+border-image: url(:/arkaplan/ic_arkaplan.jpg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_amasyauni">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>200</y>
+        <width>331</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/arkaplan/ic_arkaplan.jpg);</string>
+      </property>
+      <property name="text">
+       <string>AMASYA ÜNİVERSİTESİ</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <zorder>label_amasyauni</zorder>
+     <zorder>label_amasyalogo</zorder>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_sifredegistir">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>0</y>
+       <width>1241</width>
+       <height>1000</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_devamsizlikdurumu_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    background-color: #f0f0f0; /* Arka plan rengi */
+    color: #222;/* Metin rengi */
+    padding: 20px; /* İç boşluk */
+    border: 1px solid #ccc; /* Kenarlık */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Gölge */
+    transition: background-color 0.3s, border-color 0.3s; /* Yumuşak geçiş */
+    text-align: center; /* Metni merkezle */
+}
+
+QLabel:hover {
+    background-color: #e0e0e0; /* Arka plan rengi (hover durumunda) */
+    border-color: #999; /* Kenarlık rengi (hover durumunda) */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Şifre Değiştir</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>200</y>
+        <width>741</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#widget_2 {
+    border: 4px solid #555555; /* Kenarlık rengini ve kalınlığını ayarla */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    padding: 10px; /* İçeriği kenarlardan ayır */
+}
+</string>
+      </property>
+      <widget class="QCheckBox" name="checkBox_girisekraninadon">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>275</y>
+         <width>591</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                spacing: 5px;
+                font-size: 20px;
+                color: #333;
+            }</string>
+       </property>
+       <property name="text">
+        <string>Tüm cihazlardan çıkış yapın</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_sifreguncellendi">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>385</y>
+         <width>591</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #008000; /* Yeşil renk */
+    font-size: 20px;
+    font-weight: bold;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>50</y>
+         <width>581</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_eskisifre">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 2px solid #5e72e4; /* Kenarlık rengini değiştirin */
+    border-radius: 15px;  /* Daha yuvarlak kenarlar için değeri artırın */
+    padding: 10px; /* Metin içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 20px; /* Metin fontunun boyutunu biraz daha büyütün */
+    color: #333; /* Metin rengini belirler */
+    background-color: #f8f9fe; /* Arka plan rengini belirler */
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Normal</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_yenisifre1">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 2px solid #5e72e4; /* Kenarlık rengini değiştirin */
+    border-radius: 15px;  /* Daha yuvarlak kenarlar için değeri artırın */
+    padding: 10px; /* Metin içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 20px; /* Metin fontunun boyutunu biraz daha büyütün */
+    color: #333; /* Metin rengini belirler */
+    background-color: #f8f9fe; /* Arka plan rengini belirler */
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_yenisifre2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 2px solid #5e72e4; /* Kenarlık rengini değiştirin */
+    border-radius: 15px;  /* Daha yuvarlak kenarlar için değeri artırın */
+    padding: 10px; /* Metin içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 20px; /* Metin fontunun boyutunu biraz daha büyütün */
+    color: #333; /* Metin rengini belirler */
+    background-color: #f8f9fe; /* Arka plan rengini belirler */
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pushButton_sifredegistir">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>315</y>
+         <width>591</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: 2px solid #a9a9a9;
+    border-radius: 15px;
+    background-color: #add8e6; /* Açık mavi tonu */
+}
+
+QPushButton:hover {
+    background-color: #88b8d6; /* Biraz daha koyu mavi tonu */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Şifreyi Değiştir</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ikonlar_ogrenci.qrc">
+         <normaloff>:/şifredeğiştir/şifredeğiş.ico</normaloff>:/şifredeğiştir/şifredeğiş.ico</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_AkademikTakvim">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>0</y>
+       <width>1241</width>
+       <height>1000</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_akademiktakvim">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1241</width>
+        <height>1000</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/akdmktkvm2/obsakd.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_devamsizlikdurumu_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    background-color: #f0f0f0; /* Arka plan rengi */
+    color: #222;/* Metin rengi */
+    padding: 20px; /* İç boşluk */
+    border: 1px solid #ccc; /* Kenarlık */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Gölge */
+    transition: background-color 0.3s, border-color 0.3s; /* Yumuşak geçiş */
+    text-align: center; /* Metni merkezle */
+}
+
+QLabel:hover {
+    background-color: #e0e0e0; /* Arka plan rengi (hover durumunda) */
+    border-color: #999; /* Kenarlık rengi (hover durumunda) */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Akademik Takvim</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>110</y>
+        <width>1241</width>
+        <height>733</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#widget_3 {
+    background-color: transparent; /* Arkaplanı şeffaf yap */
+    border: 3px solid #666666; /* Kenar çizgisi koyu gri ve 3 piksel kalınlığında */
+    border-radius: 5px; /* Köşeleri yuvarla */
+}
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_anamenu">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>0</y>
+       <width>1241</width>
+       <height>1000</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1241</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_aktifakademik">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 206, 209);
+border-image: url(:/arkaplan/ic_arkaplan.jpg);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Aktif Akademik Dönem Bilgileri
+2023-2024 Bahar Dönemi</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/aktifakademik/aktifakademik.ico</normaloff>:/aktifakademik/aktifakademik.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>60</width>
+           <height>60</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_ogrenimbilgileri">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 206, 209);
+border-image: url(:/arkaplan/ic_arkaplan.jpg);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Öğrenim Bilgileri
+MÜH FAKÜLTESİ/BİLGİSAYAR MÜH
+2.Sınıf
+</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/ogrenimbilgileri/ogrenim.ico</normaloff>:/ogrenimbilgileri/ogrenim.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>60</width>
+           <height>60</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_kayittarihi">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 206, 209);
+border-image: url(:/arkaplan/ic_arkaplan.jpg);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Kayıt Tarihi: 22.08.2022
+AGNO: 
+</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ikonlar_ogrenci.qrc">
+           <normaloff>:/kayittarihi/kayittarihi3.ico</normaloff>:/kayittarihi/kayittarihi3.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>60</width>
+           <height>60</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_danismanfoto">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>590</y>
+        <width>151</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	background-color: rgb(172, 172, 172);
+	image: url(:/unknown/Unknown_person.jpg);
+    border-radius: 10px; /* Köşeleri daha yuvarlak yapar */
+    border: 2px solid #a9a9a9; /* Kenarlık rengi ve kalınlığını belirler */
+    padding: 10px; /* Yazı içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 15px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #333; /* Yazı rengini belirler */
+    background-color: rgba(255, 255, 255, 0); /* Arka plan rengini şeffaf yapar */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_danismanmav">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>540</y>
+        <width>21</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 215, 0);
+border-image: url(:/arkaplan/ic_arkaplan.jpg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ogrtisimsoyisim">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>580</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Bekir Parlak</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ikonlar_ogrenci.qrc">
+        <normaloff>:/user/user.ico</normaloff>:/user/user.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ogrtemail">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>650</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>bekir.parlak@amasya.edu.tr</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ikonlar_ogrenci.qrc">
+        <normaloff>:/posta/posta.ico</normaloff>:/posta/posta.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ogrtfakulte">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>720</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Mühendislik Fakültesi</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ikonlar_ogrenci.qrc">
+        <normaloff>:/konum/konum.ico</normaloff>:/konum/konum.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_danismanim">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>540</y>
+        <width>1191</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #555; /* Yazı rengini değiştirerek açık gri tonuna ayarlar */
+	background-color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string> Danışman</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_profilmav">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>21</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 215, 0);
+border-image: url(:/arkaplan/ic_arkaplan.jpg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_profilfoto">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>240</y>
+        <width>151</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	background-color: rgb(172, 172, 172);
+	image: url(:/unknown/Unknown_person.jpg);
+    border-radius: 10px; /* Köşeleri daha yuvarlak yapar */
+    border: 2px solid #a9a9a9; /* Kenarlık rengi ve kalınlığını belirler */
+    padding: 10px; /* Yazı içeriğinin kenarlardan içeriye olan uzaklığını belirler */
+    font-size: 15px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #333; /* Yazı rengini belirler */
+    background-color: rgba(255, 255, 255, 0); /* Arka plan rengini şeffaf yapar */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_profil">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>180</y>
+        <width>1191</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #555; /* Yazı rengini değiştirerek açık gri tonuna ayarlar */
+	background-color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string> Profil</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_fakulte">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>420</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Mühendislik Fakültesi</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ikonlar_ogrenci.qrc">
+        <normaloff>:/konum/konum.ico</normaloff>:/konum/konum.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_isimsoyisim">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>210</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>İsim Soyisim</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ikonlar_ogrenci.qrc">
+        <normaloff>:/user/user.ico</normaloff>:/user/user.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_email">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>350</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>e-mail</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ikonlar_ogrenci.qrc">
+        <normaloff>:/posta/posta.ico</normaloff>:/posta/posta.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_numara">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>280</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    border: 1px solid #ccc; /* Kenarlık ekler ve kenar rengini belirler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 1px 40px 1px 20px; /* İçerik ve kenar arasındaki boşluğu belirler */
+    font-size: 19px; /* Yazı fontunun boyutunu belirler */
+    font-weight: bold; /* Yazı fontunu kalın yapar */
+    color: #555; /* Yazı rengini belirler */
+    text-align: left; /* Metni ve ikonu sola hizalar */
+}
+
+QPushButton::icon {
+    margin-left: 0; /* İkonu en soldan başlatır */
+}
+
+QPushButton::text {
+    padding-left: 0; /* Metni en soldan başlatır */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Öğrenci Numarası:</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ikonlar_ogrenci.qrc">
+        <normaloff>:/numara/numara.ico</normaloff>:/numara/numara.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+     </widget>
+     <zorder>label_danismanim</zorder>
+     <zorder>label_profil</zorder>
+     <zorder>horizontalLayoutWidget</zorder>
+     <zorder>label_danismanfoto</zorder>
+     <zorder>label_danismanmav</zorder>
+     <zorder>pushButton_ogrtisimsoyisim</zorder>
+     <zorder>pushButton_ogrtemail</zorder>
+     <zorder>pushButton_ogrtfakulte</zorder>
+     <zorder>label_profilmav</zorder>
+     <zorder>label_profilfoto</zorder>
+     <zorder>pushButton_fakulte</zorder>
+     <zorder>pushButton_isimsoyisim</zorder>
+     <zorder>pushButton_email</zorder>
+     <zorder>pushButton_numara</zorder>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_Devamsizlikdurumu">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>0</y>
+       <width>1241</width>
+       <height>1000</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QTableWidget" name="tableWidget_devamsizlikbilgisi">
+      <property name="geometry">
+       <rect>
+        <x>34</x>
+        <y>109</y>
+        <width>1131</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    border: 2px solid #ccc; /* Tablo kenarlık rengi ve kalınlığı */
+    border-radius: 11px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item {
+    padding: 10px 15px; /* Hücre içeriğinin etrafındaki boşluk - yukarı/aşağı ve sağ/sol */
+    background-color: #f0f0f0; /* Hücre arka plan rengi */
+    border: none; /* Hücre kenarlık stilini kaldırma */
+}
+
+QHeaderView::section {
+    padding: 7px 20px; /* Sütun başlığı içeriğinin etrafındaki boşluk - yukarı/aşağı ve sağ/sol */
+    text-align: center; /* Sütun başlığı metni ortala */
+    background-color: #f0f0f0; /* Sütun başlığı arka plan rengi */
+    border: 2px solid #ccc; /* Sütun başlığı kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+QTableWidget::item:selected {
+    background-color: lightblue; /* Seçili hücre arka plan rengi */
+}
+</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>210</number>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>180</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>60</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>60</number>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Ders Kodu</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ders Adı</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Kredi</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Sınıf</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Devamsızlık Saati</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="4">
+       <property name="text">
+        <string>Girilmedi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="1" column="4">
+       <property name="text">
+        <string>Girilmedi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="2" column="4">
+       <property name="text">
+        <string>Girilmedi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="3" column="4">
+       <property name="text">
+        <string>Girilmedi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="4" column="4">
+       <property name="text">
+        <string>Girilmedi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="5" column="4">
+       <property name="text">
+        <string>Girilmedi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="6" column="4">
+       <property name="text">
+        <string>Girilmedi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="7" column="4">
+       <property name="text">
+        <string>Girilmedi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_blok_devamsizlikbilgisi">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>74</width>
+        <height>56</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_devamsizlikdurumu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	border-image: url(:/arkaplan/ic_arkaplan.jpg);
+    background-color: #f0f0f0; /* Arka plan rengi */
+    color: #222;/* Metin rengi */
+    padding: 20px; /* İç boşluk */
+    border: 1px solid #ccc; /* Kenarlık */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Gölge */
+    transition: background-color 0.3s, border-color 0.3s; /* Yumuşak geçiş */
+    text-align: center; /* Metni merkezle */
+}
+
+QLabel:hover {
+    background-color: #e0e0e0; /* Arka plan rengi (hover durumunda) */
+    border-color: #999; /* Kenarlık rengi (hover durumunda) */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Lütfen ders kaydı yapmak için Ders Kayıt menüsünden, seçtiğiniz dersleri kesinleştirin.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <zorder>groupBox_solmenu</zorder>
+    <zorder>groupBox_logo</zorder>
+    <zorder>groupBox_anamenu</zorder>
+    <zorder>groupBox_AkademikTakvim</zorder>
+    <zorder>groupBox_Devamsizlikdurumu</zorder>
+    <zorder>groupBox_derskayit</zorder>
+    <zorder>groupBox_NotListesi</zorder>
+    <zorder>groupBox_sifredegistir</zorder>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="ikonlar_ogrenci.qrc"/>
+ </resources>
+ <connections/>
+</ui>
